@@ -1,0 +1,24 @@
+html{
+  font-size: 62.5%;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.container{
+  width: 100%;
+  max-width: 123.5rem;
+  //height: 70rem;
+  background: #0079BF;
+}

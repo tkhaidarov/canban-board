@@ -1,0 +1,49 @@
+$primary-color: #0067a3;
+.header{
+  width: 100%;
+  height: 5.5rem;
+  background: $primary-color;
+}
+.headerContainer{
+  height: 100%;
+display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.4rem;
+
+  .headerLogo{
+    font-weight: 400;
+    font-size: 28px;
+    color: #fff;
+  }
+  .userMenu{
+    display: flex;
+    column-gap: .6rem;
+    align-items: center;
+    position: relative;
+  }
+  .userAvatar{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 600px){
+  .header{
+    background: transparent;
+    .headerContainer{
+      display: flex;
+      flex-direction: row;
+      //align-items: center;
+      justify-content: flex-end;
+      .headerLogo{
+        display: none;
+      }
+    }
+  }
+}

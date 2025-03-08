@@ -1,0 +1,18 @@
+.taskList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  overflow-y: auto;
+  padding-right: 1.2rem;
+  &::-webkit-scrollbar {
+    width: 1rem;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 1rem;
+  }
+}

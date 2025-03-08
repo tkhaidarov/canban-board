@@ -1,0 +1,25 @@
+@mixin font-size-base {
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+  line-height: 1.25;
+}
+.taskBoard {
+  width: 28.2rem;
+  max-height: 48rem;
+  padding: 1.2rem 0 1.2rem 1.2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.2rem;
+  background: #ebecf0;
+
+  .taskTitle {
+    @include font-size-base;
+  }
+}
+@media (max-width: 600px) {
+  .taskBoard {
+    max-height: 30rem;
+  }
+}

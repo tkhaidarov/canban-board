@@ -1,0 +1,45 @@
+@mixin font-size-base {
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+  line-height: 1.25;
+}
+.dropdownWrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  padding-right: 1.2rem;
+
+  .emptyField{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 0.3rem;
+    width: 100%;
+    height: 3rem;
+    background: #ffffff;
+    cursor: pointer;
+    border-radius: .5rem;
+  }
+
+  .dropdown{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.6rem;
+    border-radius: 0.5rem;
+    background: #ffffff;
+    padding: 0.5rem 0.5rem;
+    .dropdownItem{
+      list-style: none;
+      padding: 0.3rem 0.5rem;
+      @include font-size-base;
+      cursor: pointer;
+      transition: background 0.3s;
+      &:hover{
+        background: #dedede;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}

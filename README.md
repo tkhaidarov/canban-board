@@ -4,7 +4,7 @@
 
 ###### Склонировать репозиторий:
 ```
-gh repo clone tkhaidarov/WeatherWidget
+gh repo clone https://github.com/tkhaidarov/canban-board.git
 ```
 ###### Установить зависимости:
 ```

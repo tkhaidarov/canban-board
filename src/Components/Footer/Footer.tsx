@@ -10,12 +10,10 @@ const Footer: React.FC<IFooterProps> = ({ backlogCount, finishedTasks }) => {
       <div className={st.footerContainer}>
         <div className={st.taskInfo}>
           <p className={st.activeTasks}>Active tasks: {`<${backlogCount}>`}</p>
-          <p className={st.finishedTasks}>
-            Finished tasks: {`<${finishedTasks}>`}
-          </p>
+          <p className={st.finishedTasks}>Finished tasks: {`<${finishedTasks}>`}</p>
         </div>
         <div className={st.aboutInfo}>
-          <p>Kanban board by NAME, YEAR </p>
+          <p>Kanban board by &lt;NAME&gt;, &lt;YEAR&gt;</p>
         </div>
       </div>
     </footer>

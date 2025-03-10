@@ -1,6 +1,12 @@
 html{
   font-size: 62.5%;
 }
+body{
+  background: #0079BF
+}
+html, body{
+  height: 100%;
+}
 *{
   margin: 0;
   padding: 0;
@@ -11,15 +17,9 @@ ul{
   margin: 0;
   padding: 0;
 }
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-}
 .container{
-  width: 100%;
- // max-width: 123.5rem;
-  height: 100%;
-  background: #0079BF;
+display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 

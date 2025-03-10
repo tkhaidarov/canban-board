@@ -1,9 +1,10 @@
 .main{
   width: 100%;
-  min-height: 30rem;
-  max-height: 59rem;
-  padding: 2rem;
+  flex-grow: 1;
   .mainContainer{
+    max-width: 123.5rem;
+    margin: 0 auto;
+    padding: 2rem;
     display: flex;
     flex-direction: row;
     column-gap: 2.4rem;
